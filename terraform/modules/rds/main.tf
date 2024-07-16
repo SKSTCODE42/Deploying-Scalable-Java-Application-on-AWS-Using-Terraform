@@ -83,4 +83,3 @@ resource "aws_ssm_parameter" "rds_endpoint" {
     var.tags
   )
 }
-
