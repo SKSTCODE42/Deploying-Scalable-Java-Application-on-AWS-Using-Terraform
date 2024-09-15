@@ -37,6 +37,5 @@ file_contents = file_contents.replace("spring.datasource.url=jdbc:mysql://localh
 file_contents = file_contents.replace("spring.datasource.username=petclinic", f"spring.datasource.username={secret_data['username']}")
 file_contents = file_contents.replace("spring.datasource.password=petclinic", f"spring.datasource.password={secret_data['password']}")
 
-
 with open(file_path, 'w') as f:
         f.write(file_contents)
